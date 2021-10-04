@@ -1,72 +1,84 @@
-:root{
-    --headercolor: #3C3A39;
-    --maincolor: #1C1A19;
+:root {
+  --headercolor: #3c3a39;
+  --maincolor: #1c1a19;
 }
 
-.header{
-    background-color: var(--headercolor);
-    width: 100%;
-    height: 92px;
-    margin: 0;
-}
-.header .nav{
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: baseline;
-    justify-content: space-between;
+.header {
+  background-color: var(--headercolor);
+  width: 100%;
+  height: 92px;
+  margin: 0;
 }
 
-.boxi-icon{
-    color: white;
-    transform: scale(2);
+.header .nav {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  justify-content: space-between;
 }
-.leftfloat{
-    margin: 50px 0 0 24px;
+
+.boxi-icon {
+  color: white;
+  transform: scale(2);
 }
-.rightfloat{
-    margin-right: 36px;
+
+.leftfloat {
+  margin: 50px 0 0 24px;
 }
-.main{
-    position: relative;
-    width: 100%;
-    height: 590px;
-    padding: 120px 24px;
-    background-color: #1C1A19;
-    overflow: hidden;
+
+.rightfloat {
+  margin-right: 36px;
 }
-.main-flex{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 590px;
+  padding: 120px 24px;
+  background-color: #1c1a19;
+  overflow: hidden;
 }
-.main-flex>h1{
-    color: #FF6B00;
-    margin-bottom: 12px;
+
+.main-flex {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
 }
-.main-flex>h4{
-    color: #FFF5E1;
-    margin-bottom: 12px;
+
+.main-flex > h1 {
+  color: #ff6b00;
+  margin-bottom: 12px;
 }
-.main-flex>p{
-    color: #FFFFFF;
-    margin-bottom: 22px;
+
+.main-flex > h4 {
+  color: #fff5e1;
+  margin-bottom: 12px;
 }
-.social{
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: flex-start;
-    justify-content: right;
+
+.main-flex > p {
+  color: #fff;
+  margin-bottom: 22px;
 }
-.soc-icon{
-    color: #DBD8D7;
-    transform: scale(2);
-    margin: 0 21px;
+
+.social {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: right;
 }
-.abs-back{
-    position: absolute;
-    top: 5px;
-    right: -310px;
+
+.soc-icon {
+  color: #dbd8d7;
+  transform: scale(2);
+  margin: 0 21px;
 }
-.abs-back img{
-    transform: scale(0.5);
+
+.abs-back {
+  position: absolute;
+  top: 5px;
+  right: -310px;
+}
+
+.abs-back img {
+  transform: scale(0.5);
 }

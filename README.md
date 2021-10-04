@@ -11,7 +11,6 @@ Additional description about the project and its features.
 - HTML5, CSS3, and JavaScript
 - Linter and Prettier
 
-
 ## Live Demo
 
 [Live Demo Link](https://livedemo.com)
