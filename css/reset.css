@@ -1,1 +1,41 @@
 /* Base styles */
+
+:root{
+    --headercolor: #3C3A39;
+    --maincolor: #1C1A19;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-weight: normal;
+    background-color: white;
+    color: var(--maincolor);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+.group::after
+{
+clear: both;
+content: ".";
+display: block;
+height: 0px;
+line-height: 0px;
+visibility: hidden;
+}
+h1{
+    font: 700 40px/40px 'Avalon_Bold', sans-serif;
+    letter-spacing: -1px;
+}
+h4{
+    font: 400 15px/20px 'Shentox', sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}

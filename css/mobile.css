@@ -1,0 +1,28 @@
+:root{
+    --headercolor: #3C3A39;
+    --maincolor: #1C1A19;
+}
+
+.header{
+    background-color: var(--headercolor);
+    width: 100%;
+    height: 92px;
+    margin: 0;
+}
+.header .nav{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.boxi-icon{
+    color: white;
+    transform: scale(2);
+}
+.leftfloat{
+    margin: 50px 0 0 24px;
+}
+.rightfloat{
+    margin-right: 36px;
+}
