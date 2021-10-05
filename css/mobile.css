@@ -39,14 +39,14 @@ main {
   background-color: #1c1a19;
   overflow: hidden;
   background-image: url(/img/mobile-background.png);
-    background-position: bottom -40px right 0px;
-    background-repeat: no-repeat;
+  background-position: bottom -40px right 0;
+  background-repeat: no-repeat;
 }
+
 .main-flex {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
-  
 }
 
 .main-flex > h1 {
@@ -81,4 +81,4 @@ button {
   transform: scale(2);
   margin: 0 21px;
 }
-  
+
