@@ -1,6 +1,6 @@
-# Project Name
+# Mrtaaj Personal Portfolio
 
-> One paragraph statement about the project.
+> This is a personal portfolio for Saheed Tajudeen - mrtaaj. This portfolio is created to showcase some of his skills and past projects.
 
 ![screenshot](./app_screenshot.png)
 
@@ -8,9 +8,8 @@ Additional description about the project and its features.
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- HTML5, CSS3, and JavaScript
+- Linter and Prettier
 
 ## Live Demo
 
@@ -21,7 +20,7 @@ Additional description about the project and its features.
 - Clone the project
 
 ```bash
-git clone https://github.com/user/html-css-template.git
+git clone https://github.com/MrTaaJ/personal-portfolio.git
 
 ```
 
@@ -70,9 +69,9 @@ npm run html-validator
 
 ## 👤 Author
 
-- Github: [@author](https://github.com/author)
-- Twitter: [@author](https://twitter.com/author)
-- Linkedin: [@author](https://www.linkedin.com/in/author/)
+- Github: [@mrtaaj](https://github.com/mrtaaj)
+- Twitter: [@seedof_99](https://twitter.com/seedof_99)
+- Linkedin: [@mrtaaj001](https://www.linkedin.com/in/mrtaaj001/)
 
 ## 🤝 Contributing
 

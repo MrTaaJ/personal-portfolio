@@ -2,7 +2,9 @@
   "name": "html-css-template",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "i": "^0.3.7"
+  },
   "devDependencies": {
     "hint": "^6.1.0",
     "prettier": "1.18.2",
