@@ -17,34 +17,41 @@ body {
     font-size: 16px;
     line-height: 24px;
 }
-.group::after
-{
-clear: both;
-content: ".";
-display: block;
-height: 0px;
-line-height: 0px;
-visibility: hidden;
+
+.group::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0px;
+    line-height: 0px;
+    visibility: hidden;
 }
+
 h1{
     font: 400 56px/64px 'Crete Round', serif;
     letter-spacing: 0.37px;
 }
+
 h2{
     font: 400 40px/52px 'Crete Round', sans-serif;
 }
+
 h2{
     font: 400 32px/44px 'Crete Round', sans-serif;
 }
+
 h4{
     font: 700 24px/32px 'Roboto', sans-serif;
 }
+
 p{
     font: 400 16px/24px 'Poppins', sans-serif;
 }
+
 ul {
     list-style-type: none;
 }
+
 a {
     text-decoration: none;
 }
