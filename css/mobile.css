@@ -28,23 +28,25 @@ header {
   margin: 50px 0 0 24px;
 }
 
-.nav > ul {
+.mobile-nav {
   margin-right: 36px;
 }
 
 main {
-  position: relative;
   width: 100%;
   height: 590px;
   padding: 120px 24px;
   background-color: #1c1a19;
   overflow: hidden;
+  background-image: url(/img/mobile-background.png);
+    background-position: bottom -40px right 0px;
+    background-repeat: no-repeat;
 }
-
 .main-flex {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
+  
 }
 
 .main-flex > h1 {
@@ -79,13 +81,4 @@ button {
   transform: scale(2);
   margin: 0 21px;
 }
-
-.abs-back {
-  position: absolute;
-  top: 5px;
-  right: -310px;
-}
-
-.abs-back img {
-  transform: scale(0.5);
-}
+  
