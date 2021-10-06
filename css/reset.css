@@ -4,11 +4,13 @@
     --headercolor: #3C3A39;
     --maincolor: #1C1A19;
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-weight: normal;
     background-color: white;

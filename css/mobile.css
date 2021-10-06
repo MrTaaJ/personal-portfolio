@@ -81,3 +81,85 @@ button {
   transform: scale(2);
   margin: 0 21px;
 }
+
+.middle{
+    width: 100%;
+    padding: 120px 24px;
+}
+
+.midle>h2{    
+    color: #1C1A19;
+}
+
+.mid-title{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 80px;
+}
+.mid-title>h2{
+    margin: 10px 0;
+    text-underline-offset: 48px;
+    text-decoration-line: underline;
+    text-decoration-color: #212121;
+    text-decoration-thickness: 1.5px;
+}
+.mid-project{
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "proj-1"
+      "proj-2"
+      "proj-3"
+      "proj-4"
+      "proj-5"
+      "proj-6"
+      "proj-7";
+    box-sizing: border-box;
+}
+.proj-1{
+    grid-area: proj-1;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 12px;
+}
+.proj-1>h2{
+    margin-top: 12px;
+}
+.proj-skill>ul>li{
+    padding: 10px 12px;
+    display: inline-block;
+    margin-right: 12px;
+    border: solid 1px #8993A4;
+}
+.proj-button-1{
+    background-color: #FF6B00;
+    padding: 12px;
+    width: 124px;
+    height: 48px;
+    color: white;
+
+}
+
+
+
+
+
+.g1-5 {
+    height: 800px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    grid-template-areas:
+      "one1 one1"
+      "one1 one1"
+      "three3 two2"
+      "four4 five5";
+    box-sizing: border-box;
+  }
+
+  .g1 {
+    grid-area: one1;
+  }
