@@ -37,7 +37,6 @@ main {
   height: 590px;
   padding: 120px 24px;
   background-color: #1c1a19;
-  overflow: hidden;
   background-image: url(/img/mobile-background.png);
   background-position: bottom -40px right 0;
   background-repeat: no-repeat;
@@ -144,7 +143,7 @@ button {
     margin-right: 12px;
     border: solid 1px #8993A4;
 }
-.proj-button-1{
+.button-1{
     background-color: #FF6B00;
     padding: 12px;
     width: 124px;
@@ -217,25 +216,94 @@ button {
     bottom: 0;
     left: 0;
 }
-
-
-
-
-.g1-5 {
-    height: 800px;
-    display: grid;
+.about{
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 10px;
-    grid-template-areas:
-      "one1 one1"
-      "one1 one1"
-      "three3 two2"
-      "four4 five5";
-    box-sizing: border-box;
-  }
+    padding: 120px 0px;
+    background-color: #1C1A19;
+}
+.about-back{
+    padding: 0 24px;
+    background-image: url(/img/about-mobile-back.png);
+    background-position: bottom 0px right 0px;
+    background-repeat: no-repeat;
+}
+.about-1{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 24px;
+    border-bottom: 2px solid white;
+    padding-bottom: 210px;    
+}
+.about-1 > h1 {
+    font-size: 72px;
+    color: #ff6b00;
+}
+.about-1 > p {
+    color: white;
+}
+.about-1 > .button-1 {
+    width: 161px;
+}
+.about-know{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    color: white;
+    margin-top: 140px;
+}
+.skill-com{
+    text-align: center;
+    color: white;
+}
+.skill-com>h3{
+    font: 700 32px/44px 'Inter', sans-serif;
+    padding: 10px;
+    position: relative;
+}
+.skill-com>ul>li{
+    display: block;
+    font: 400 22px/43px 'Inter', sans-serif;
+    padding: 10px;
+}
+.lang>h3::before{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    height: 18px;
+    width:18px;
+    color: #FF6B00;
+    background-color: #FF6B00;
+    display: grid;
+    place-items: center;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
 
-  .g1 {
-    grid-area: one1;
-  }
+.frame>h3::before{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    height: 18px;
+    width:18px;
+    color: #FF6B00;
+    background-color: #FF6B00;
+    display: grid;
+    place-items: center;
+    transform: translate(-50%, -50%);
+}
+
+.skills>h3::before{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    height: 18px;
+    width:18px;
+    border-radius: 50%;
+    color: #FF6B00;
+    background-color: #FF6B00;
+    display: grid;
+    place-items: center;
+    transform: translate(-50%, -50%);
+}
