@@ -86,10 +86,6 @@ button {
   padding: 120px 24px;
 }
 
-.midle > h2 {
-  color: #1c1a19;
-}
-
 .mid-title {
   text-align: center;
   width: 100%;
@@ -97,6 +93,7 @@ button {
 }
 
 .mid-title > h2 {
+    color: #1c1a19;
   margin: 10px 0;
   text-underline-offset: 48px;
   text-decoration-line: underline;
@@ -158,6 +155,19 @@ button {
   color: white;
   text-align: center;
   font: 700 17px/24px 'Inter', sans-serif;
+  cursor: pointer;
+}
+
+.button-1:hover{
+    background-color: #FFF5E1;
+    border: 1px solid #F55800;
+    color: #F55800;
+    box-sizing: border-box;
+}
+
+.button-1:active{
+    background-color: #E05304;
+    color: #F4F1F0;
 }
 
 .proj-com {
@@ -166,7 +176,7 @@ button {
   flex-flow: column nowrap;
   gap: 12px;
   padding: 84px 16px 0 16px;
-  height: 386px;
+  min-height: 400px;
   color: white;
 }
 
@@ -180,63 +190,48 @@ button {
   background-color: rgba(255, 255, 255, 0.24);
 }
 
-.proj-2 {
-  grid-area: proj-2;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(/img/proj-2.png) no-repeat;
+.proj-2,
+.proj-3,
+.proj-4,
+.proj-5,
+.proj-6,
+.proj-7 {
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(/img/proj-2.png) no-repeat;
   background-blend-mode: darken;
   background-size: cover;
   background-position: center;
+}
+
+.proj-2 {
+    grid-area: proj-2;
 }
 
 .proj-3 {
   grid-area: proj-3;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(/img/proj-2.png) no-repeat;
-  background-blend-mode: darken;
-  background-size: cover;
-  background-position: center;
 }
 
 .proj-4 {
   grid-area: proj-4;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(/img/proj-2.png) no-repeat;
-  background-blend-mode: darken;
-  background-size: cover;
-  background-position: center;
 }
 
 .proj-5 {
   grid-area: proj-5;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(/img/proj-2.png) no-repeat;
-  background-blend-mode: darken;
-  background-size: cover;
-  background-position: center;
 }
 
 .proj-6 {
   grid-area: proj-6;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(/img/proj-2.png) no-repeat;
-  background-blend-mode: darken;
-  background-size: cover;
-  background-position: center;
 }
 
 .proj-7 {
   grid-area: proj-7;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(/img/proj-2.png) no-repeat;
-  background-blend-mode: darken;
-  background-size: cover;
-  background-position: center;
 }
 
-.bt-con {
+.proj-com > .button-1 {
   position: absolute;
-  height: 48px;
   width: 100%;
-  background-color: #ff6b00;
-  display: grid;
-  place-items: center;
   bottom: 0;
   left: 0;
+  margin-top: 10px;
 }
 
 .about {
@@ -290,6 +285,22 @@ button {
   font: 700 32px/44px 'Inter', sans-serif;
   padding: 10px;
   position: relative;
+}
+
+.lang > h3::before,
+.frame > h3::before,
+.skills > h3::before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  height: 18px;
+  width: 18px;
+  color: #ff6b00;
+  background-color: #ff6b00;
+  display: grid;
+  place-items: center;
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .lang > h3::before {
