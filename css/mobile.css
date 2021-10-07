@@ -87,18 +87,19 @@ button {
 }
 
 .mid-title {
-  text-align: center;
+  display: grid;
+  place-items: center;
   width: 100%;
   margin-bottom: 80px;
 }
 
 .mid-title > h2 {
+    text-align: center;
+    width: fit-content;
     color: #1c1a19;
   margin: 10px 0;
-  text-underline-offset: 48px;
-  text-decoration-line: underline;
-  text-decoration-color: #212121;
-  text-decoration-thickness: 1.5px;
+  padding: 0px 5px 48px 5px;
+  border-bottom: 2px solid #212121;
 }
 
 .mid-project {
@@ -277,6 +278,8 @@ button {
 }
 
 .skill-com {
+    display: grid;
+    place-items: center;
   text-align: center;
   color: white;
 }
@@ -287,61 +290,36 @@ button {
   position: relative;
 }
 
+.lang > h3,
+.frame > h3,
+.skills > h3{
+    width: fit-content;
+    padding: 5px 20px;
+} 
 .lang > h3::before,
 .frame > h3::before,
 .skills > h3::before {
   content: " ";
   position: absolute;
   top: 50%;
-  left: 30%;
+  left: 0%;
   height: 18px;
   width: 18px;
   color: #ff6b00;
   background-color: #ff6b00;
   display: grid;
   place-items: center;
-  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .lang > h3::before {
-  content: " ";
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  height: 18px;
-  width: 18px;
-  color: #ff6b00;
-  background-color: #ff6b00;
-  display: grid;
-  place-items: center;
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .frame > h3::before {
-  content: " ";
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  height: 18px;
-  width: 18px;
-  color: #ff6b00;
-  background-color: #ff6b00;
-  display: grid;
-  place-items: center;
   transform: translate(-50%, -50%);
 }
 
 .skills > h3::before {
-  content: " ";
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  height: 18px;
-  width: 18px;
   border-radius: 50%;
-  color: #ff6b00;
-  background-color: #ff6b00;
-  display: grid;
-  place-items: center;
   transform: translate(-50%, -50%);
 }
