@@ -33,9 +33,13 @@ header {
   margin-right: 36px;
 }
 
+main,
+.contact{
+  padding: 120px 24px;
+}
+
 main {
   height: 590px;
-  padding: 120px 24px;
   background-color: #1c1a19;
   background-image: url(/img/mobile-background.png);
   background-position: bottom -40px right 0;
@@ -83,7 +87,7 @@ button {
 }
 
 .soc-icon {
-  color: #dbd8d7;
+  color: #524c4a;
   transform: scale(2);
   margin: 0 21px;
 }
@@ -182,10 +186,16 @@ button {
   background-position: center;
 }
 
+.skill-com > ul > li,
+.skill-com > h3,
+input,
+textarea{
+  padding: 10px;
+}
+
 .skill-com > ul > li {
   display: block;
   font: 400 22px/43px 'Inter', sans-serif;
-  padding: 10px;
 }
 
 .proj-com .proj-skill > ul > li {
@@ -268,7 +278,6 @@ button {
 
 .skill-com > h3 {
   font: 700 32px/44px 'Inter', sans-serif;
-  padding: 10px;
   position: relative;
 }
 
@@ -307,10 +316,6 @@ button {
   transform: translate(-50%, -50%);
 }
 
-.contact{
-  padding: 100px 0;
-}
-
 .contact-div{
   margin: 0 auto;
   width: 90%;
@@ -325,10 +330,14 @@ button {
   padding: 20px 0;
 }
 
+input,
+textarea{
+  font: 400 15px/24px 'Inter', sans-serif;
+}
+
 input{
   display: block;
   width: 100%;
-  padding: 10px;
   border:none;
   border-bottom: 1px solid #dbd8d7;
   margin-bottom: 20px;
@@ -339,13 +348,14 @@ textarea{
   width: 100%;
   margin-bottom: 10px;
   border: none;
-  background-color: #E5E5E5;
-  font-weight: 400px;
+  background-color: #FBF8F7;  
 }
 
-.form > .button-1{
+.item-cent > .button-1{
   width: 131px;
+  margin-top: 24px;
 }
-.margin-0-auto{
-  margin: 0 auto;
+
+.footer .soc-icon{
+  color: #505F79;
 }
