@@ -34,7 +34,7 @@ header {
 }
 
 main,
-.contact{
+.contact {
   padding: 120px 24px;
 }
 
@@ -50,7 +50,8 @@ main {
 .proj-1,
 .proj-1-2,
 .about-1,
-.about-know {
+.about-know,
+.input-flex {
   flex-flow: column nowrap;
 }
 
@@ -188,8 +189,8 @@ button {
 
 .skill-com > ul > li,
 .skill-com > h3,
-input,
-textarea{
+.input,
+.textarea {
   padding: 10px;
 }
 
@@ -316,57 +317,56 @@ textarea{
   transform: translate(-50%, -50%);
 }
 
-.contact-div{
+.contact-div {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
 }
 
-.contact-p{
+.contact-p {
   font: 700 32px/44px 'Inter', sans-serif;
   text-align: center;
+  margin-bottom: 60px;
 }
 
-.form{
+.form {
   padding: 20px 0;
 }
 
-input,
-textarea{
+.input,
+.textarea {
   font: 400 15px/24px 'Inter', sans-serif;
 }
 
-.input{
+.input {
   display: block;
-  width: 100%;
-  border:none;
+  border: none;
   border-bottom: 1px solid #dbd8d7;
   margin-bottom: 20px;
 }
 
-.input:focus,
-.textarea:focus{
-  outline: none;
-}
-
-.textarea{
+.textarea {
   display: block;
   width: 100%;
   margin-bottom: 10px;
   border: none;
-  background-color: #FBF8F7;  
+  background-color: #fbf8f7;
 }
 
-.footer{
+.input:focus,
+.textarea:focus {
+  outline: none;
+}
+
+.footer {
   border-top: 1px solid #dfe1e6;
-  padding-top: 20px;
+  padding: 20px;
 }
 
-.item-cent > .button-1{
+.item-cent > .button-1 {
   width: 131px;
   margin-top: 24px;
 }
 
-.footer .soc-icon{
-  color: #505F79;
+.footer .soc-icon {
+  color: #505f79;
 }
-
