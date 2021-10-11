@@ -22,7 +22,7 @@
     <header class="w-100-per">
       <div class="mobile-header d-flex w-100-per">
         <div class="logo">
-          <a class="button" href="/index.html"><img src="./img/mrtaaj.png" alt="mrtaaj"/></a>
+          <a class="button" href="/index.html"><img src="./img/mrtaaj.png" alt="mrtaaj" /></a>
         </div>
         <nav>
           <ul class="mobile-nav">
@@ -219,14 +219,34 @@
     <!-- start of contact section -->
     <section class="contact">
       <div class="contact-div">
-        <p class="contact-p">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+        <p class="contact-p">
+          I'm always interested in hearing about new projects, so if you'd like to chat please get
+          in touch.
+        </p>
 
         <form action="https://formspree.io/f/xoqybbgr" method="POST" class="form">
-          <input type="text" name="text" placeholder="Full name" maxlength="30" id="name">
-          <input type="email" name="email" placeholder="Email address">
-          <textarea name="" id="" cols="30" rows="7" placeholder="Enter text here" maxlength="500"></textarea>
+          <input
+            type="text"
+            name="name"
+            placeholder="Full name"
+            maxlength="30"
+            id="name"
+            class="input"
+            required
+          />
+          <input type="email" name="email" placeholder="Email address" class="input" required />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="7"
+            placeholder="Enter text here"
+            maxlength="500"
+            class="textarea"
+            required
+          ></textarea>
           <div class="item-cent">
-          <button type="button" class="button-1">Get in touch</button>
+            <button aria-label="button" class="button-1">Get in touch</button>
           </div>
         </form>
       </div>
@@ -240,6 +260,5 @@
         <a class="button" href=""><i class="bx bxl-medium soc-icon"></i></a>
       </div>
     </footer>
-
   </body>
 </html>

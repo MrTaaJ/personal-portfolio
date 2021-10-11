@@ -335,7 +335,7 @@ textarea{
   font: 400 15px/24px 'Inter', sans-serif;
 }
 
-input{
+.input{
   display: block;
   width: 100%;
   border:none;
@@ -343,12 +343,22 @@ input{
   margin-bottom: 20px;
 }
 
-textarea{
+.input:focus,
+.textarea:focus{
+  outline: none;
+}
+
+.textarea{
   display: block;
   width: 100%;
   margin-bottom: 10px;
   border: none;
   background-color: #FBF8F7;  
+}
+
+.footer{
+  border-top: 1px solid #dfe1e6;
+  padding-top: 20px;
 }
 
 .item-cent > .button-1{
@@ -359,3 +369,4 @@ textarea{
 .footer .soc-icon{
   color: #505F79;
 }
+
