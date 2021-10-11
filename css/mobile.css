@@ -306,3 +306,41 @@ button {
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
+
+.contact{
+  padding: 100px 0;
+}
+
+.contact-div{
+  margin: 0 auto;
+  width: 90%;
+}
+
+.contact-p{
+  font: 700 32px/44px 'Inter', sans-serif;
+  text-align: center;
+}
+
+.form{
+  padding: 20px 0;
+}
+
+input{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border:none;
+  border-bottom: 1px solid #dbd8d7;
+  margin-bottom: 20px;
+}
+
+textarea{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-button{
+  padding: 20px 40px;
+  text-align: center;
+}
