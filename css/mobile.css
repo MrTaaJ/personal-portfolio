@@ -199,7 +199,7 @@ button {
   font: 400 22px/43px 'Inter', sans-serif;
 }
 
-.proj-com .proj-skill > ul > li {
+.skill-li > ul > li {
   background-color: rgba(255, 255, 255, 0.24);
 }
 
