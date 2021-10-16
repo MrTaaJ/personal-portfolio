@@ -33,9 +33,13 @@ header {
   margin-right: 36px;
 }
 
+main,
+.contact {
+  padding: 120px 24px;
+}
+
 main {
   height: 590px;
-  padding: 120px 24px;
   background-color: #1c1a19;
   background-image: url(/img/mobile-background.png);
   background-position: bottom -40px right 0;
@@ -46,7 +50,8 @@ main {
 .proj-1,
 .proj-1-2,
 .about-1,
-.about-know {
+.about-know,
+.input-flex {
   flex-flow: column nowrap;
 }
 
@@ -83,7 +88,7 @@ button {
 }
 
 .soc-icon {
-  color: #dbd8d7;
+  color: #524c4a;
   transform: scale(2);
   margin: 0 21px;
 }
@@ -182,13 +187,19 @@ button {
   background-position: center;
 }
 
-.skill-com > ul > li {
-  display: block;
-  font: 400 22px/43px 'Inter', sans-serif;
+.skill-com > ul > li,
+.skill-com > h3,
+.input,
+.textarea {
   padding: 10px;
 }
 
-.proj-com .proj-skill > ul > li {
+.skill-com > ul > li {
+  display: block;
+  font: 400 22px/43px 'Inter', sans-serif;
+}
+
+.skill-li > ul > li {
   background-color: rgba(255, 255, 255, 0.24);
 }
 
@@ -268,7 +279,6 @@ button {
 
 .skill-com > h3 {
   font: 700 32px/44px 'Inter', sans-serif;
-  padding: 10px;
   position: relative;
 }
 
@@ -305,4 +315,58 @@ button {
 .skills > h3::before {
   border-radius: 50%;
   transform: translate(-50%, -50%);
+}
+
+.contact-div {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.contact-p {
+  font: 700 32px/44px 'Inter', sans-serif;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.form {
+  padding: 20px 0;
+}
+
+.input,
+.textarea {
+  font: 400 15px/24px 'Inter', sans-serif;
+}
+
+.input {
+  display: block;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  margin-bottom: 20px;
+}
+
+.textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #fbf8f7;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+}
+
+.footer {
+  border-top: 1px solid #dfe1e6;
+  padding: 20px;
+}
+
+.item-cent > .button-1 {
+  width: 131px;
+  margin-top: 24px;
+}
+
+.footer .soc-icon {
+  color: #505f79;
 }
