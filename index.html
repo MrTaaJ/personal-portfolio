@@ -13,14 +13,14 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
     />
   </head>
 
   <body>
     <header class="w-100-per">
-      <div class="mobile-header d-flex w-100-per">
+      <div class="gen-header d-flex w-100-per">
         <div class="logo">
           <a class="button" href="/index.html"><img src="./img/mrtaaj.png" alt="mrtaaj"/></a>
         </div>
@@ -32,19 +32,43 @@
               </button>
             </li>
           </ul>
+          <ul class="desktop-nav">
+            <li>
+              <button type="button" class="desktop-button">
+                Portfolio
+              </button>
+            </li>
+            <li>
+              <button type="button" class="desktop-button">
+                About
+              </button>
+            </li>
+            <li>
+              <button type="button" class="desktop-button">
+                Contact
+              </button>
+            </li>
+            <li>
+              <button type="button" class="desktop-button mail-butt">
+                <ion-icon name="mail-outline" class="ion-icon"></ion-icon>
+              </button>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
-    <main class="w-100-per">
+    <main class="w-100-per d-flex">
       <div class="main-flex d-flex">
-        <h1>Hey There. <br />I’m Tajudeen</h1>
-        <h4>I am a Software Developer</h4>
-        <p>
-          I can help you build a product , feature or website Look through some of my work and
-          experience! If you like what you see and have a project you need coded, don’t hestiate to
-          contact me.
-        </p>
-        <div class="social d-flex">
+        <div class="cont-flex d-flex">
+          <h1>Hey There. <br />I’m Tajudeen</h1>
+          <h4>I am a Software Developer</h4>
+          <p>
+            I can help you build a product , feature or website Look through some of my work and
+            experience! If you like what you see and have a project you need coded, don’t hestiate to
+            contact me.
+          </p>
+        </div>
+        <div class="social social-top d-flex">
           <a class="button" href=""><i class="bx bxl-github soc-icon"></i></a>
           <a class="button" href=""><i class="bx bxl-linkedin soc-icon"></i></a>
           <a class="button" href=""><i class="bx bxl-twitter soc-icon"></i></a>
@@ -216,7 +240,7 @@
       </div>
     </section>
     <section class="contact">
-      <div class="contact-div d-flex input-flex">
+      <div class="contact-div d-flex">
         <h3 class="contact-p">
           I'm always interested in hearing about new projects, so if you'd like to chat please get
           in touch.
@@ -250,7 +274,7 @@
             class="textarea"
             required
           ></textarea>
-          <div class="item-cent">
+          <div class="item-cent textarea-but">
             <button type="submit" aria-label="button" class="button-1">Get in touch</button>
           </div>
         </form>
@@ -264,5 +288,6 @@
         <a class="button" href=""><i class="bx bxl-medium soc-icon"></i></a>
       </div>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   </body>
 </html>
