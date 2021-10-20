@@ -32,7 +32,8 @@ header {
 .mobile-nav {
   margin-right: 36px;
 }
-.desktop-nav{
+
+.desktop-nav {
   display: none;
 }
 

@@ -1,168 +1,173 @@
-@media screen and (min-width: 1024px){
-    header {
-        height: 72px;
-    }
+@media screen and (min-width: 1024px) {
+  header {
+    height: 72px;
+  }
 
-    .mobile-nav{
-        display:none;
-    }
-    .gen-header {
-        height: 72px;
-        align-items: center;
-        padding: 0 150px;
-    }
-    .logo {
-        margin: 0;
-    }
-    .desktop-nav{
-        display: block;
-    }
-    .desktop-nav>li{
-        display: inline-block;
-        margin-left: 32px;
-    }
-    .desktop-button{
-        cursor: pointer;
-        color: white;
-        text-align: center;
-        font: 600 15px/20px 'Inter', sans-serif;
-    }
-    .mail-butt{
-        position: relative;
-    }
+  .mobile-nav {
+    display: none;
+  }
 
-    .ion-icon{
-        position: absolute;
-        font-size: 20px;
-        top: -15px;
-    }
+  .gen-header {
+    height: 72px;
+    align-items: center;
+    padding: 0 150px;
+  }
 
-    main {
-        height: 870px;
-        background-image: url(/img/main-background.png);
-        background-position: top 0 right 0;
-    }
+  .logo {
+    margin: 0;
+  }
 
-    .main-flex {
-        flex-flow: row-reverse nowrap;
-        align-items: center;
-        justify-content: center;
-        width: 50%;
-    }
+  .desktop-nav {
+    display: block;
+  }
 
-    .social-top{
-        flex-flow: column nowrap;
-    }
+  .desktop-nav > li {
+    display: inline-block;
+    margin-left: 32px;
+  }
 
-    .social-top {
-        margin-left: 10px;
-        margin-right: 80px;
-    }
-    .soc-icon {
-        color: #CFCFCF;
-        transform: scale(1.5);
-        margin: 15px 0px;
-    }
+  .desktop-button {
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    font: 600 15px/20px 'Inter', sans-serif;
+  }
 
+  .mail-butt {
+    position: relative;
+  }
 
-    .middle,
-    .contact {
-        padding: 120px;
-    }
+  .ion-icon {
+    position: absolute;
+    font-size: 20px;
+    top: -15px;
+  }
 
-    .mid-title {
-        margin-bottom: 80px;
-    }
-      
-    .mid-title > h2 {
-        text-align: left;
-        width: 100%;
-        margin: 10px 12px;
-        padding: 0 5px;
-        border-bottom: none;
-        position: relative;
-    }
-    .mid-title > h2::after{
-        content: " ";
-        position: absolute;
-        top: 50%;
-        right: 5%;
-        height: 1.5px;
-        width: 55%;
-        color: #212121;
-        background-color: #212121;
-    }
+  main {
+    height: 870px;
+    background-image: url(/img/main-background.png);
+    background-position: top 0 right 0;
+  }
 
-    .mid-project {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 24px;
-        grid-template-areas:
-          "proj-1 proj-1 proj-1"
-          "proj-2 proj-3 proj-4"
-          "proj-5 proj-6 proj-7";
-    }
+  .main-flex {
+    flex-flow: row-reverse nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
 
-    .proj-1,
-    .about-know,
-    .contact-div{
-        flex-flow: row nowrap;
-    }
+  .social-top {
+    flex-flow: column nowrap;
+    margin-left: 10px;
+    margin-right: 80px;
+  }
 
-    .proj-1 {
-        gap: 24px;
-      }
+  .soc-icon {
+    color: #cfcfcf;
+    transform: scale(1.5);
+    margin: 15px 0;
+  }
 
-    .proj-1-1 {
-        width: 50%;
-        height: 400px;
-    }
-    .proj-1-2{
-        width: 50%;
-    }
+  .middle,
+  .contact {
+    padding: 120px;
+  }
 
-    .proj-com {
-        padding: 74px 16px 0 16px;
-        min-height: 450px;
-    }
+  .mid-title {
+    margin-bottom: 80px;
+  }
 
-    .about-back {
-        padding: 0 120px;
-        background-image: url(/img/about-desktop-back.png);
-        background-position: top 0px right 0;
-    }
+  .mid-title > h2 {
+    text-align: left;
+    width: 100%;
+    margin: 10px 12px;
+    padding: 0 5px;
+    border-bottom: none;
+    position: relative;
+  }
 
-    .about-1 {
-        padding-right: 50%;
-    }
+  .mid-title > h2::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    height: 1.5px;
+    width: 55%;
+    color: #212121;
+    background-color: #212121;
+  }
 
-    .about-know {
-        justify-content: space-around;
-    }
+  .mid-project {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    grid-template-areas:
+      "proj-1 proj-1 proj-1"
+      "proj-2 proj-3 proj-4"
+      "proj-5 proj-6 proj-7";
+  }
 
-    .lang{
-        margin-top: -20px;
-    }
+  .proj-1,
+  .about-know,
+  .contact-div {
+    flex-flow: row nowrap;
+  }
 
-    .contact-div {
-        gap: 24px;
-      }
+  .proj-1 {
+    gap: 24px;
+  }
 
-    .contact-p {
-        width: 45%;
-        text-align: left;
-        margin-bottom: 60px;
-      }
-      
-      .form {
-        width: 55%;
-        padding: 0;
-      }
-      
-    .textarea-but{
-        float: left;
-    }
+  .proj-1-1 {
+    width: 50%;
+    height: 400px;
+  }
 
-    .footer .soc-icon {
-        margin-right: 30px;
-      }
+  .proj-1-2 {
+    width: 50%;
+  }
+
+  .proj-com {
+    padding: 74px 16px 0 16px;
+    min-height: 450px;
+  }
+
+  .about-back {
+    padding: 0 120px;
+    background-image: url(/img/about-desktop-back.png);
+    background-position: top 0 right 0;
+  }
+
+  .about-1 {
+    padding-right: 50%;
+  }
+
+  .about-know {
+    justify-content: space-around;
+  }
+
+  .lang {
+    margin-top: -20px;
+  }
+
+  .contact-div {
+    gap: 24px;
+  }
+
+  .contact-p {
+    width: 45%;
+    text-align: left;
+    margin-bottom: 60px;
+  }
+
+  .form {
+    width: 55%;
+    padding: 0;
+  }
+
+  .textarea-but {
+    float: left;
+  }
+
+  .footer .soc-icon {
+    margin-right: 30px;
+  }
 }
