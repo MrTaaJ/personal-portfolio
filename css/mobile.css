@@ -5,19 +5,20 @@
 
 header {
   background-color: var(--headercolor);
-  height: 92px;
+  height: 60px;
   margin: 0;
 }
 
-.mobile-header,
+.gen-header,
 .social {
   flex-flow: row nowrap;
 }
 
-.mobile-header {
-  height: 92px;
-  align-items: baseline;
+.gen-header {
+  height: 60px;
+  align-items: center;
   justify-content: space-between;
+  padding: 0 30px;
 }
 
 .boxi-icon {
@@ -25,15 +26,12 @@ header {
   transform: scale(2);
 }
 
-.logo {
-  margin: 50px 0 0 24px;
-}
-
-.mobile-nav {
-  margin-right: 36px;
+.desktop-nav {
+  display: none;
 }
 
 main,
+.middle,
 .contact {
   padding: 120px 24px;
 }
@@ -47,32 +45,35 @@ main {
 }
 
 .main-flex,
+.cont-flex,
 .proj-1,
 .proj-1-2,
 .about-1,
 .about-know,
+.contact-div,
 .input-flex {
   flex-flow: column nowrap;
 }
 
-.main-flex {
+.main-flex,
+.cont-flex {
   align-items: flex-start;
 }
 
-.main-flex > h1,
-.main-flex > h4 {
+.cont-flex > h1,
+.cont-flex > h4 {
   margin-bottom: 12px;
 }
 
-.main-flex > h1 {
+.cont-flex > h1 {
   color: #ff6b00;
 }
 
-.main-flex > h4 {
+.cont-flex > h4 {
   color: #fff5e1;
 }
 
-.main-flex > p {
+.cont-flex > p {
   color: #fff;
   margin-bottom: 22px;
 }
@@ -91,10 +92,6 @@ button {
   color: #524c4a;
   transform: scale(2);
   margin: 0 21px;
-}
-
-.middle {
-  padding: 120px 24px;
 }
 
 .mid-title {
@@ -169,7 +166,7 @@ button {
 }
 
 .button-1:active {
-  background-color: #e05304;
+  background-color: #46413e;
   color: #f4f1f0;
 }
 

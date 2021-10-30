@@ -2,3 +2,4 @@
 This imports the `reset.css` file */
 @import './reset.css';
 @import './mobile.css';
+@import './desktop.css' screen and (min-width: 1024px);
