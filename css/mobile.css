@@ -165,6 +165,13 @@ button {
   box-sizing: border-box;
 }
 
+.button-1:focus {
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+  box-sizing: border-box;
+}
+
 .button-1:active {
   background-color: #46413e;
   color: #f4f1f0;
