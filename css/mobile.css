@@ -5,7 +5,7 @@
 
 header {
   background-color: var(--headercolor);
-  height: 92px;
+  height: 60px;
   margin: 0;
 }
 
@@ -15,22 +15,15 @@ header {
 }
 
 .gen-header {
-  height: 92px;
-  align-items: baseline;
+  height: 60px;
+  align-items: center;
   justify-content: space-between;
+  padding: 0 30px;
 }
 
 .boxi-icon {
   color: white;
   transform: scale(2);
-}
-
-.logo {
-  margin: 50px 0 0 24px;
-}
-
-.mobile-nav {
-  margin-right: 36px;
 }
 
 .desktop-nav {
