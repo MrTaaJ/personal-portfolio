@@ -21,6 +21,16 @@ header {
   padding: 0 30px;
 }
 
+.logo{
+  height: 26px;
+  width: 87px;;
+}
+
+.logo img{
+  height: 26px;
+  width: 87px;;
+}
+
 .boxi-icon {
   color: white;
   transform: scale(2);

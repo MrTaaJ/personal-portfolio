@@ -111,12 +111,13 @@ main {
 }
 
 .proj-1-1 {
-  width: 50%;
+  width: 60%;
   height: 400px;
+  background-image: url(/img/ProjectDesktop-1.png);
 }
 
 .proj-1-2 {
-  width: 50%;
+  width: 40%;
 }
 
 .proj-com {
