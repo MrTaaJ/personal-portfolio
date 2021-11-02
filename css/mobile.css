@@ -152,7 +152,7 @@ button {
   padding: 12px;
   width: 124px;
   height: 48px;
-  color: white;
+  color: #2e2e2e;
   text-align: center;
   font: 700 17px/24px 'Inter', sans-serif;
   cursor: pointer;
@@ -160,8 +160,15 @@ button {
 
 .button-1:hover {
   background-color: #fff5e1;
-  border: 1px solid #f55800;
-  color: #f55800;
+  border: 1px solid #8f3400;
+  color: #8f3400;
+  box-sizing: border-box;
+}
+
+.button-1:focus {
+  background-color: #fff5e1;
+  border: 1px solid #8f3400;
+  color: #8f3400;
   box-sizing: border-box;
 }
 
