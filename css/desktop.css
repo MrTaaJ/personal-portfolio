@@ -15,7 +15,7 @@ header {
   display: block;
 }
 
-.desktop-nav > li{
+.desktop-nav > li {
   display: inline-block;
   margin-left: 32px;
 }
@@ -37,8 +37,8 @@ header {
   top: -15px;
 }
 
-.mobile-nav-tog{
-  display:none;
+.mobile-nav-tog {
+  display: none;
 }
 
 main {

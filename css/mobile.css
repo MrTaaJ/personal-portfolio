@@ -21,14 +21,14 @@ header {
   padding: 0 30px;
 }
 
-.logo{
+.logo {
   height: 26px;
-  width: 87px;;
+  width: 87px;
 }
 
-.logo img{
+.logo img {
   height: 26px;
-  width: 87px;;
+  width: 87px;
 }
 
 .boxi-icon {
@@ -41,40 +41,32 @@ header {
   display: none;
 }
 
-.mobile-nav-tog{
+.mobile-nav-tog {
   position: absolute;
   display: block;
   height: 0;
-  background-color: #3C3A39;
+  background-color: #3c3a39;
   top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   padding: 10px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   opacity: 0;
 }
 
-.active{
+.active {
   height: 650px;
   opacity: 1;
 }
 
-.mobile-nav-tog li:not(:first-child){
-  display: grid;
-  place-items: start;
-  border-bottom: 1px solid #6F6C6B;
-  padding: 20px;
-  clear: both;
-}
-
-.mobile-nav-tog .desktop-button{
+.mobile-nav-tog .desktop-button {
   color: white;
   font: 700 32px/44px 'Inter', sans-serif;
   cursor: pointer;
 }
 
-.mobile-nav-tog .cancel-butt{
+.mobile-nav-tog .cancel-butt {
   float: right;
   display: block;
   margin-right: 20px;
@@ -256,6 +248,14 @@ button {
 
 .skill-li > ul > li {
   background-color: rgba(255, 255, 255, 0.24);
+}
+
+.mobile-nav-tog li:not(:first-child) {
+  display: grid;
+  place-items: start;
+  border-bottom: 1px solid #6f6c6b;
+  padding: 20px;
+  clear: both;
 }
 
 .proj-2 {
