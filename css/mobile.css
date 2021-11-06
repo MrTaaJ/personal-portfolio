@@ -60,7 +60,7 @@ header {
   opacity: 1;
 }
 
-.mobile-nav-tog .desktop-button {
+.mobile-nav-tog .mobile-nav-button {
   color: white;
   font: 700 32px/44px 'Inter', sans-serif;
   cursor: pointer;
