@@ -7,6 +7,8 @@ header {
   background-color: var(--headercolor);
   height: 60px;
   margin: 0;
+  position: fixed;
+  z-index: 2;
 }
 
 .gen-header,
@@ -80,6 +82,7 @@ main,
 }
 
 main {
+  padding-top: 180px;
   height: 590px;
   background-color: #1c1a19;
   background-image: url(/img/mobile-background.png);

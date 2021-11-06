@@ -42,6 +42,7 @@ header {
 }
 
 main {
+  padding-top: 192px;
   height: 870px;
   background-image: url(/img/main-background.png);
   background-position: top 0 right 0;
