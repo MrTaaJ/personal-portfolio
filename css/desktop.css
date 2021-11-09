@@ -130,6 +130,44 @@ main {
   min-height: 450px;
 }
 
+.pop-proj-1-back{
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 112px 142px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(.6rem);
+}
+
+.pop-proj-1{
+  background-color: #FFFFFF;
+  width: 100%;
+  border: 1px solid #EBECF0;
+  height: 100%;
+  padding: 27px 24px;
+  box-sizing: border-box;
+  flex-flow: column nowrap;
+  z-index: 99;
+}
+
+.pop-proj-1-1{
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.cancel-pop-butt{
+  display: grid;
+  place-items: center;
+}
+
+.pop-boxicon{
+  color: red;
+  transform: scale(3);
+}
+
 .about-back {
   padding: 0 120px;
   background-image: url(/img/about-desktop-back.png);

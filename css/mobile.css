@@ -235,6 +235,7 @@ button {
   background-blend-mode: darken;
   background-size: cover;
   background-position: center;
+  z-index: 1;
 }
 
 .skill-com > ul > li,
@@ -291,6 +292,34 @@ button {
   bottom: 0;
   left: 0;
   margin-top: 10px;
+}
+
+.pop-proj-1-back{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 112px 142px;
+  background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(.6rem);
+}
+.pop-proj-1{
+  background-color: #FFFFFF;
+  width: 100%;
+  border: 1px solid #EBECF0;
+  height: 100%;
+  padding: 27px 24px;
+  box-sizing: border-box;
+  flex-flow: column nowrap;
+  z-index: 99;
+}
+
+.pop-proj-skill > ul > li {
+  padding: 10px 12px;
+  display: inline-block;
+  margin-right: 12px;
+  border: solid 1px #8993a4;
 }
 
 .about {
