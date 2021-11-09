@@ -12,7 +12,8 @@ header {
 }
 
 .gen-header,
-.social {
+.social,
+.pop-proj-1-1 {
   flex-flow: row nowrap;
 }
 
@@ -83,7 +84,7 @@ main,
 
 main {
   padding-top: 180px;
-  height: 590px;
+  height: 90vh;
   background-color: #1c1a19;
   background-image: url(/img/mobile-background.png);
   background-position: bottom -40px right 0;
@@ -97,7 +98,10 @@ main {
 .about-1,
 .about-know,
 .contact-div,
-.input-flex {
+.input-flex,
+.pop-proj-1,
+.pop-proj-1-2,
+.pop-proj-1-2-para {
   flex-flow: column nowrap;
 }
 
@@ -186,7 +190,8 @@ button {
   gap: 12px;
 }
 
-.proj-skill > ul > li {
+.proj-skill > ul > li,
+.pop-proj-skill > ul > li {
   padding: 10px 12px;
   display: inline-block;
   margin-right: 12px;
@@ -295,32 +300,85 @@ button {
 }
 
 .pop-proj-1-back{
+  display: none;
   position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
-  padding: 112px 142px;
+  right: 0;
+  padding: 30px 30px;
   background-color: rgba(0,0,0,0.4);
   backdrop-filter: blur(.6rem);
+  z-index: 2;
+  animation: zoom 0.6s ease-in-out;
 }
+
+@keyframes zoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+.pop-active{
+  display: block;
+}
+
 .pop-proj-1{
   background-color: #FFFFFF;
   width: 100%;
   border: 1px solid #EBECF0;
   height: 100%;
-  padding: 27px 24px;
+  padding: 20px 15px;
   box-sizing: border-box;
-  flex-flow: column nowrap;
-  z-index: 99;
 }
 
-.pop-proj-skill > ul > li {
-  padding: 10px 12px;
-  display: inline-block;
-  margin-right: 12px;
-  border: solid 1px #8993a4;
+.pop-proj-1-1{
+  justify-content: space-between;
+  padding-bottom: 30px;
 }
+.pop-desktopHead{
+  display: none;
+}
+.cancel-pop-butt{
+  display: grid;
+  place-items: center;
+  width: 30px;
+}
+.pop-boxicon{
+  color: #67798E;
+  transform: scale(2);
+  cursor: pointer;
+}
+
+.pop-proj-1-2{
+  padding-top: 20px;
+  gap: 15px;
+}
+
+.pop-proj-1-2-back {
+  width: 100%;
+  height: 220px;
+  background-image: url(/img/Pop-Mobile-Portfolio.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.pop-proj-1-2-para{
+  gap: 15px;
+}
+
+.pop-proj-1-2-para p{
+  font: 400 16px/24px 'Inter', sans-serif;
+}
+.pop-button-arrange{
+  justify-content: start;
+}
+
+.pop-button-arrange .button-1{
+  width: 150px;
+  margin-right: 20px;
+}
+
 
 .about {
   padding: 120px 0;
