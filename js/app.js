@@ -4,8 +4,8 @@ const cancelBut = document.getElementById('cancel-butt');
 const cancelBut1 = document.getElementById('cancel1-butt');
 const cancelBut2 = document.getElementById('cancel2-butt');
 const cancelBut3 = document.getElementById('cancel3-butt');
-const popBut = document.querySelectorAll('#pop-button-1');
-const popUl = document.querySelectorAll('#pop-proj-1-back');
+const popBut = document.querySelectorAll('.pop-button-1');
+const popUl = document.querySelector('#pop-proj-1-back');
 
 hamburger.addEventListener('click', () => {
   navUl.classList.add('active');
@@ -109,7 +109,7 @@ function setter(i) {
 for (let i = 0; i < itemList.length; i++) {
   popBut[i].addEventListener('click', e => {
     setter(i);
-    popUl[0].classList.add('pop-active');
+    popUl.classList.add('pop-active');
   });
 }
 
