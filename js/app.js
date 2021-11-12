@@ -121,10 +121,10 @@ for (let i = 0; i < itemList.length; i++) {
 
 //Cancel/Remove Action
 document.querySelector('#pop-proj-1-back').addEventListener('click', () => {
-  popUl[0].classList.remove('pop-active');
+  popUl.classList.remove('pop-active');
 });
 document.querySelector('#cancel-pop-butt').addEventListener('click', () => {
-  popUl[0].classList.remove('pop-active');
+  popUl.classList.remove('pop-active');
 });
 document.querySelector('.pop-proj-1').addEventListener('click', e => {
   e.stopPropagation();
