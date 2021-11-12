@@ -131,27 +131,27 @@ main {
   min-height: 450px;
 }
 
-.pop-proj-1-back{
+.pop-proj-1-back {
   padding: 100px 132px;
 }
 
-.pop-proj-1{
+.pop-proj-1 {
   padding: 27px 24px;
 }
 
-.pop-proj-1-1{
-  padding-bottom: 0px;
+.pop-proj-1-1 {
+  padding-bottom: 0;
 }
 
-.pop-mobileHead{
+.pop-mobileHead {
   display: none;
 }
 
-.pop-desktopHead{
+.pop-desktopHead {
   display: block;
 }
 
-.pop-proj-1-2{
+.pop-proj-1-2 {
   padding-top: 40px;
 }
 
@@ -164,7 +164,7 @@ main {
   background-position: center;
 }
 
-.pop-proj-1-2-para{
+.pop-proj-1-2-para {
   width: 35%;
   justify-content: space-between;
 }

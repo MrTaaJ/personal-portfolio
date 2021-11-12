@@ -298,8 +298,9 @@ button {
   left: 0;
   margin-top: 10px;
 }
+
 /* Styling starts here */
-.pop-proj-1-back{
+.pop-proj-1-back {
   display: none;
   position: fixed;
   width: 100vw;
@@ -308,49 +309,52 @@ button {
   left: 0;
   right: 0;
   padding: 30px 30px;
-  background-color: rgba(0,0,0,0.4);
-  backdrop-filter: blur(.6rem);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0.6rem);
   z-index: 2;
   animation: zoom 0.6s ease-in-out;
 }
 
 @keyframes zoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
+  from { transform: scale(0); }
+  to { transform: scale(1); }
 }
 
-.pop-active{
+.pop-active {
   display: block;
 }
 
-.pop-proj-1{
-  background-color: #FFFFFF;
+.pop-proj-1 {
+  background-color: #fff;
   width: 100%;
-  border: 1px solid #EBECF0;
+  border: 1px solid #ebecf0;
   height: 100%;
   padding: 20px 15px;
   box-sizing: border-box;
 }
 
-.pop-proj-1-1{
+.pop-proj-1-1 {
   justify-content: space-between;
   padding-bottom: 30px;
 }
-.pop-desktopHead{
+
+.pop-desktopHead {
   display: none;
 }
-.cancel-pop-butt{
+
+.cancel-pop-butt {
   display: grid;
   place-items: center;
   width: 30px;
 }
-.pop-boxicon{
-  color: #67798E;
+
+.pop-boxicon {
+  color: #67798e;
   transform: scale(2);
   cursor: pointer;
 }
 
-.pop-proj-1-2{
+.pop-proj-1-2 {
   padding-top: 20px;
   gap: 15px;
 }
@@ -363,21 +367,24 @@ button {
   background-size: cover;
   background-position: center;
 }
-.pop-proj-1-2-para{
+
+.pop-proj-1-2-para {
   gap: 15px;
 }
 
-.pop-proj-1-2-para p{
+.pop-proj-1-2-para p {
   font: 400 16px/24px 'Inter', sans-serif;
 }
-.pop-button-arrange{
+
+.pop-button-arrange {
   justify-content: start;
 }
 
-.pop-button-arrange .button-1{
+.pop-button-arrange .button-1 {
   width: 150px;
   margin-right: 20px;
 }
+
 /* Ends here */
 
 .about {

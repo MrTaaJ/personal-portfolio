@@ -1,369 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mrtaaj's Personal Profile</title>
+    <link rel="icon" type="image/png" href="./img/mrtaaj-link-profile.png" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mrtaaj's Personal Profile</title>
-  <link rel="icon" type="image/png" href="./img/mrtaaj-link-profile.png" />
-  <link rel="stylesheet" href="./css/index.css" />
-  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-  <header class="w-100-per">
-    <div class="gen-header d-flex w-100-per">
-      <div class="logo">
-        <a class="button" href="/index.html"><img src="./img/mrtaaj.png" alt="mrtaaj profile logo" /></a>
-      </div>
-      <nav>
-        <ul class="mobile-nav" id="mobile-nav">
-          <li>
-            <button type="button" aria-label="hamburger button" class="hamburger-button">
-              <i class="bx bx-menu boxi-icon"></i>
-            </button>
-          </li>
-        </ul>
-
-        <ul class="mobile-nav-tog" id="mobile-nav-tog">
-          <li>
-            <button type="button" aria-label="cancel mobile menu" class="mobile-nav-button cancel-butt"
-              id="cancel-butt">
-              <ion-icon name="close-outline" class="ion-icon"></ion-icon>
-            </button>
-          </li>
-          <li>
-            <a href="#portfolio" aria-label="Mobile Portfolio button" id="cancel1-butt" class="mobile-nav-button">
-              Portfolio
-            </a>
-          </li>
-          <li>
-            <a href="#about" aria-label="Mobile About button" id="cancel2-butt" class="mobile-nav-button">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#contact" aria-label="Mobile Contact button" id="cancel3-butt" class="mobile-nav-button">
-              Contact
-            </a>
-          </li>
-        </ul>
-
-        <ul class="desktop-nav">
-          <li>
-            <a href="#portfolio" aria-label="Portfolio button" class="desktop-button">
-              Portfolio
-            </a>
-          </li>
-          <li>
-            <a href="#about" aria-label="About button" class="desktop-button">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#contact" aria-label="Contact button" class="desktop-button">
-              Contact
-            </a>
-          </li>
-          <li>
-            <button type="button" aria-label="send an email button" class="desktop-button mail-butt">
-              <ion-icon name="mail-outline" class="ion-icon"></ion-icon>
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="w-100-per d-flex">
-    <div class="main-flex d-flex">
-      <div class="cont-flex d-flex">
-        <h1>Hey There. <br />I’m Tajudeen</h1>
-        <h4>I am a Software Developer</h4>
-        <p>
-          I can help you build a product , feature or website Look through some of my work and
-          experience! If you like what you see and have a project you need coded, don’t hestiate
-          to contact me.
-        </p>
-      </div>
-      <div class="social social-top d-flex">
-        <a class="button" href="https://github.com/mrtaaj" aria-label="Social link to GitHub"><i
-            class="bx bxl-github soc-icon"></i></a>
-        <a class="button" href="https://www.linkedin.com/in/mrtaaj001/" aria-label="Social link to LinkedIn"><i
-            class="bx bxl-linkedin soc-icon"></i></a>
-        <a class="button" href="https://twitter.com/seedof_99" aria-label="Social link to Twitter"><i
-            class="bx bxl-twitter soc-icon"></i></a>
-        <a class="button" href="https://medium.com/@saheed.taaj" aria-label="Social link to Medium"><i
-            class="bx bxl-medium soc-icon"></i></a>
-      </div>
-    </div>
-  </main>
-  <section class="middle w-100-per" id="portfolio">
-    <div class="mid-title item-cent w-100-per">
-      <h2>My Recent Works</h2>
-    </div>
-    <div class="mid-project d-grid w-100-per">
-      <div class="proj-1 d-flex">
-        <div class="proj-1-1">
-          <!-- <img src="/img/ProjectMobile-1.png" alt="Project-1"> -->
+  <body>
+    <header class="w-100-per">
+      <div class="gen-header d-flex w-100-per">
+        <div class="logo">
+          <a class="button" href="/index.html"
+            ><img src="./img/mrtaaj.png" alt="mrtaaj profile logo"
+          /></a>
         </div>
-        <div class="proj-1-2 d-flex">
-          <h3>Multi-Post Stories</h3>
+        <nav>
+          <ul class="mobile-nav" id="mobile-nav">
+            <li>
+              <button type="button" aria-label="hamburger button" class="hamburger-button">
+                <i class="bx bx-menu boxi-icon"></i>
+              </button>
+            </li>
+          </ul>
+
+          <ul class="mobile-nav-tog" id="mobile-nav-tog">
+            <li>
+              <button
+                type="button"
+                aria-label="cancel mobile menu"
+                class="mobile-nav-button cancel-butt"
+                id="cancel-butt"
+              >
+                <ion-icon name="close-outline" class="ion-icon"></ion-icon>
+              </button>
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                aria-label="Mobile Portfolio button"
+                id="cancel1-butt"
+                class="mobile-nav-button"
+              >
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                aria-label="Mobile About button"
+                id="cancel2-butt"
+                class="mobile-nav-button"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                aria-label="Mobile Contact button"
+                id="cancel3-butt"
+                class="mobile-nav-button"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+
+          <ul class="desktop-nav">
+            <li>
+              <a href="#portfolio" aria-label="Portfolio button" class="desktop-button">
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="#about" aria-label="About button" class="desktop-button">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#contact" aria-label="Contact button" class="desktop-button">
+                Contact
+              </a>
+            </li>
+            <li>
+              <button
+                type="button"
+                aria-label="send an email button"
+                class="desktop-button mail-butt"
+              >
+                <ion-icon name="mail-outline" class="ion-icon"></ion-icon>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="w-100-per d-flex">
+      <div class="main-flex d-flex">
+        <div class="cont-flex d-flex">
+          <h1>Hey There. <br />I’m Tajudeen</h1>
+          <h4>I am a Software Developer</h4>
           <p>
-            A daily selection of privately personalized reads; no accounts or sign-ups required.
-            has been the industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a standard dummy text.
+            I can help you build a product , feature or website Look through some of my work and
+            experience! If you like what you see and have a project you need coded, don’t hestiate
+            to contact me.
           </p>
-          <div class="proj-skill">
+        </div>
+        <div class="social social-top d-flex">
+          <a class="button" href="https://github.com/mrtaaj" aria-label="Social link to GitHub"
+            ><i class="bx bxl-github soc-icon"></i
+          ></a>
+          <a
+            class="button"
+            href="https://www.linkedin.com/in/mrtaaj001/"
+            aria-label="Social link to LinkedIn"
+            ><i class="bx bxl-linkedin soc-icon"></i
+          ></a>
+          <a class="button" href="https://twitter.com/seedof_99" aria-label="Social link to Twitter"
+            ><i class="bx bxl-twitter soc-icon"></i
+          ></a>
+          <a
+            class="button"
+            href="https://medium.com/@saheed.taaj"
+            aria-label="Social link to Medium"
+            ><i class="bx bxl-medium soc-icon"></i
+          ></a>
+        </div>
+      </div>
+    </main>
+    <section class="middle w-100-per" id="portfolio">
+      <div class="mid-title item-cent w-100-per">
+        <h2>My Recent Works</h2>
+      </div>
+      <div class="mid-project d-grid w-100-per">
+        <div class="proj-1 d-flex">
+          <div class="proj-1-1">
+            <!-- <img src="/img/ProjectMobile-1.png" alt="Project-1"> -->
+          </div>
+          <div class="proj-1-2 d-flex">
+            <h3>Multi-Post Stories</h3>
+            <p>
+              A daily selection of privately personalized reads; no accounts or sign-ups required.
+              has been the industry's standard dummy text ever since the 1500s, when an unknown
+              printer took a standard dummy text.
+            </p>
+            <div class="proj-skill">
+              <ul>
+                <li>css</li>
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+            <button
+              type="button"
+              aria-label="Click to read more on Multi-Post Stories"
+              class="button-1"
+              id="pop-button-1"
+            >
+              See Project
+            </button>
+          </div>
+        </div>
+
+        <!-- Starting of 1st Modal Popup -->
+
+        <div class="pop-proj-1-back" id="pop-proj-1-back">
+          <div class="pop-proj-1 d-flex">
+            <div class="pop-proj-1-1 d-flex">
+              <h3 class="pop-mobileHead" id="mobileChangerCo">Multi-Post Stories</h3>
+              <h3 class="pop-desktopHead" id="desktopChangerCo">
+                Keeping track of hundreds of components website
+              </h3>
+              <button
+                type="button"
+                aria-label="cancel pop-up see project"
+                class="cancel-pop-butt"
+                id="cancel-pop-butt"
+              >
+                <ion-icon name="close-outline" class="ion-icon pop-boxicon"></ion-icon>
+              </button>
+            </div>
+            <div class="pop-proj-skill">
+              <ul>
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby on rails</li>
+              </ul>
+            </div>
+            <div class="pop-proj-1-2 d-flex">
+              <div class="pop-proj-1-2-back"></div>
+              <div class="pop-proj-1-2-para d-flex">
+                <p id="changeCo">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                  Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                  unknown printer took a galley of type and scrambled it 1960s with the relea. Lorem
+                  Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                  has been the industry's standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it 1960s with the releax map lapora
+                  verita.
+                </p>
+                <div class="pop-button-arrange d-flex">
+                  <a
+                    href=""
+                    aria-label="Click to read more on Multi-Post Stories"
+                    class="button-1"
+                    id="liveChange"
+                  >
+                    <span>See Live</span>
+                    <span><i class="bx bx-link-external"></i></span>
+                  </a>
+                  <a
+                    href=""
+                    aria-label="Click to read more on Multi-Post Stories"
+                    class="button-1"
+                    id="sourceChange"
+                  >
+                    <span>See Source</span>
+                    <span><i class="bx bxl-github"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ending of 1st Modal Popup -->
+
+        <div class="proj-2 proj-com">
+          <h3>Professional Art Printing Data</h3>
+          <p>
+            A daily selection of privately personalized reads; no accounts or sign-ups required. has
+            been the industry's standard
+          </p>
+          <div class="proj-skill skill-li">
             <ul>
-              <li>css</li>
               <li>html</li>
               <li>bootstrap</li>
               <li>Ruby</li>
             </ul>
           </div>
-          <button type="button" aria-label="Click to read more on Multi-Post Stories" class="button-1" id="pop-button-1">
+          <button
+            type="button"
+            aria-label="Click to read more on Professional Art Printing Data"
+            class="button-1"
+            id="pop-button-1"
+          >
+            See Project
+          </button>
+        </div>
+        <div class="proj-3 proj-com">
+          <h3>Professional Art Printing Data</h3>
+          <p>
+            A daily selection of privately personalized reads; no accounts or sign-ups required. has
+            been the industry's standard
+          </p>
+          <div class="proj-skill skill-li">
+            <ul>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+          </div>
+          <button
+            type="button"
+            aria-label="Click to read more on Professional Art Printing Data"
+            class="button-1"
+            id="pop-button-1"
+          >
+            See Project
+          </button>
+        </div>
+        <div class="proj-4 proj-com">
+          <h3>Professional Art Printing Data</h3>
+          <p>
+            A daily selection of privately personalized reads; no accounts or sign-ups required. has
+            been the industry's standard
+          </p>
+          <div class="proj-skill skill-li">
+            <ul>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+          </div>
+          <button
+            type="button"
+            aria-label="Click to read more on Professional Art Printing Data"
+            class="button-1"
+            id="pop-button-1"
+          >
+            See Project
+          </button>
+        </div>
+        <div class="proj-5 proj-com">
+          <h3>Professional Art Printing Data</h3>
+          <p>
+            A daily selection of privately personalized reads; no accounts or sign-ups required. has
+            been the industry's standard
+          </p>
+          <div class="proj-skill skill-li">
+            <ul>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+          </div>
+          <button
+            type="button"
+            aria-label="Click to read more on Professional Art Printing Data"
+            class="button-1"
+            id="pop-button-1"
+          >
+            See Project
+          </button>
+        </div>
+        <div class="proj-6 proj-com">
+          <h3>Professional Art Printing Data</h3>
+          <p>
+            A daily selection of privately personalized reads; no accounts or sign-ups required. has
+            been the industry's standard
+          </p>
+          <div class="proj-skill skill-li">
+            <ul>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+          </div>
+          <button
+            type="button"
+            aria-label="Click to read more on Professional Art Printing Data"
+            class="button-1"
+            id="pop-button-1"
+          >
+            See Project
+          </button>
+        </div>
+        <div class="proj-7 proj-com">
+          <h3>Professional Art Printing Data</h3>
+          <p>
+            A daily selection of privately personalized reads; no accounts or sign-ups required. has
+            been the industry's standard
+          </p>
+          <div class="proj-skill skill-li">
+            <ul>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+          </div>
+          <button
+            type="button"
+            aria-label="Click to read more on Professional Art Printing Data"
+            class="button-1"
+            id="pop-button-1"
+          >
             See Project
           </button>
         </div>
       </div>
-
-      <!-- Starting of 1st Modal Popup -->
-
-      <div class="pop-proj-1-back" id="pop-proj-1-back">
-        <div class="pop-proj-1 d-flex">
-          <div class="pop-proj-1-1 d-flex">
-            <h3 class="pop-mobileHead" id="mobileChangerCo">Multi-Post Stories</h3>
-            <h3 class="pop-desktopHead" id="desktopChangerCo">Keeping track of hundreds of components website</h3>
-            <button type="button" aria-label="cancel pop-up see project" class="cancel-pop-butt" id="cancel-pop-butt">
-              <ion-icon name="close-outline" class="ion-icon pop-boxicon"></ion-icon>
-            </button>
-          </div>
-          <div class="pop-proj-skill">
-            <ul>
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby on rails</li>
-            </ul>
-          </div>
-          <div class="pop-proj-1-2 d-flex">
-            <div class="pop-proj-1-2-back">
-            </div>
-            <div class="pop-proj-1-2-para d-flex">
-              <p id="changeCo">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it 1960s with the relea. Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
-              </p>
-              <div class="pop-button-arrange d-flex">
-                <a href="" aria-label="Click to read more on Multi-Post Stories" class="button-1" id="liveChange">
-                  <span>See Live</span>
-                  <span><i class='bx bx-link-external'></i></span>
-                </a>
-                <a href="" aria-label="Click to read more on Multi-Post Stories" class="button-1" id="sourceChange">
-                  <span>See Source</span>
-                  <span><i class='bx bxl-github'></i></span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Ending of 1st Modal Popup -->
-
-      <div class="proj-2 proj-com">
-        <h3>Professional Art Printing Data</h3>
-        <p>
-          A daily selection of privately personalized reads; no accounts or sign-ups required. has
-          been the industry's standard
-        </p>
-        <div class="proj-skill skill-li">
-          <ul>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-        </div>
-        <button type="button" aria-label="Click to read more on Professional Art Printing Data" class="button-1" id="pop-button-1">
-          See Project
-        </button>
-      </div>
-      <div class="proj-3 proj-com">
-        <h3>Professional Art Printing Data</h3>
-        <p>
-          A daily selection of privately personalized reads; no accounts or sign-ups required. has
-          been the industry's standard
-        </p>
-        <div class="proj-skill skill-li">
-          <ul>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-        </div>
-        <button type="button" aria-label="Click to read more on Professional Art Printing Data" class="button-1" id="pop-button-1">
-          See Project
-        </button>
-      </div>
-      <div class="proj-4 proj-com">
-        <h3>Professional Art Printing Data</h3>
-        <p>
-          A daily selection of privately personalized reads; no accounts or sign-ups required. has
-          been the industry's standard
-        </p>
-        <div class="proj-skill skill-li">
-          <ul>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-        </div>
-        <button type="button" aria-label="Click to read more on Professional Art Printing Data" class="button-1" id="pop-button-1">
-          See Project
-        </button>
-      </div>
-      <div class="proj-5 proj-com">
-        <h3>Professional Art Printing Data</h3>
-        <p>
-          A daily selection of privately personalized reads; no accounts or sign-ups required. has
-          been the industry's standard
-        </p>
-        <div class="proj-skill skill-li">
-          <ul>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-        </div>
-        <button type="button" aria-label="Click to read more on Professional Art Printing Data" class="button-1" id="pop-button-1">
-          See Project
-        </button>
-      </div>
-      <div class="proj-6 proj-com">
-        <h3>Professional Art Printing Data</h3>
-        <p>
-          A daily selection of privately personalized reads; no accounts or sign-ups required. has
-          been the industry's standard
-        </p>
-        <div class="proj-skill skill-li">
-          <ul>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-        </div>
-        <button type="button" aria-label="Click to read more on Professional Art Printing Data" class="button-1" id="pop-button-1">
-          See Project
-        </button>
-      </div>
-      <div class="proj-7 proj-com">
-        <h3>Professional Art Printing Data</h3>
-        <p>
-          A daily selection of privately personalized reads; no accounts or sign-ups required. has
-          been the industry's standard
-        </p>
-        <div class="proj-skill skill-li">
-          <ul>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-        </div>
-        <button type="button" aria-label="Click to read more on Professional Art Printing Data" class="button-1" id="pop-button-1">
-          See Project
-        </button>
-      </div>
-    </div>
-  </section>
-  <section class="about w-100-per" id="about">
-    <div class="about-back">
-      <div class="about-1 d-flex">
-        <h2>About me</h2>
-        <p>
-          Hello I’m a software developer! I can help you build a product , feature or website Look
-          through some of my work and experience! If you like what you see and have a project you
-          need coded, don’t hestiate to contact me.
-        </p>
-        <button type="button" aria-label="Get my Resume Button" class="button-1">
-          Get My Resume
-        </button>
-      </div>
-    </div>
-    <div class="about-know d-flex">
-      <div class="skill-com lang item-cent">
-        <h3>Language</h3>
-        <ul>
-          <li>Javascript</li>
-          <li>Ruby</li>
-          <li>Html</li>
-          <li>Css</li>
-        </ul>
-      </div>
-      <div class="skill-com frame item-cent">
-        <h3>Frameworks</h3>
-        <ul>
-          <li>Bootstrap</li>
-          <li>Ruby on Rails</li>
-          <li>RsPec</li>
-          <li>CapyBara</li>
-          <li>Selenium</li>
-        </ul>
-      </div>
-      <div class="skill-com skills item-cent">
-        <h3>Skills</h3>
-        <ul>
-          <li>Codekit</li>
-          <li>Github</li>
-          <li>Codepen</li>
-          <li>Gitlab</li>
-          <li>Terminal</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="contact" id="contact">
-    <div class="contact-div d-flex">
-      <h3 class="contact-p">
-        I'm always interested in hearing about new projects, so if you'd like to chat please get
-        in touch.
-      </h3>
-      <form action="https://formspree.io/f/xoqybbgr" method="POST" class="form">
-        <div class="d-flex input-flex">
-          <input type="text" name="name" placeholder="Full name" maxlength="30" id="name" class="input" required />
-          <input type="email" name="_replyto" placeholder="Email address" class="input" required />
-        </div>
-        <textarea name="message" id="message" cols="30" rows="7" placeholder="Enter text here" maxlength="500"
-          class="textarea" required></textarea>
-        <div class="item-cent textarea-but">
-          <button type="submit" aria-label="Get in touch button" class="button-1">
-            Get in touch
+    </section>
+    <section class="about w-100-per" id="about">
+      <div class="about-back">
+        <div class="about-1 d-flex">
+          <h2>About me</h2>
+          <p>
+            Hello I’m a software developer! I can help you build a product , feature or website Look
+            through some of my work and experience! If you like what you see and have a project you
+            need coded, don’t hestiate to contact me.
+          </p>
+          <button type="button" aria-label="Get my Resume Button" class="button-1">
+            Get My Resume
           </button>
         </div>
-      </form>
-    </div>
-  </section>
-  <footer class="item-cent footer">
-    <div class="social d-flex">
-      <a class="button" href="https://github.com/mrtaaj" aria-label="Social link to GitHub"><i
-          class="bx bxl-github soc-icon"></i></a>
-      <a class="button" href="https://www.linkedin.com/in/mrtaaj001/" aria-label="Social link to LinkedIn"><i
-          class="bx bxl-linkedin soc-icon"></i></a>
-      <a class="button" href="https://twitter.com/seedof_99" aria-label="Social link to Twitter"><i
-          class="bx bxl-twitter soc-icon"></i></a>
-      <a class="button" href="https://medium.com/@saheed.taaj" aria-label="Social link to Medium"><i
-          class="bx bxl-medium soc-icon"></i></a>
-    </div>
-  </footer>
-  <script src="/index.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-</body>
-
+      </div>
+      <div class="about-know d-flex">
+        <div class="skill-com lang item-cent">
+          <h3>Language</h3>
+          <ul>
+            <li>Javascript</li>
+            <li>Ruby</li>
+            <li>Html</li>
+            <li>Css</li>
+          </ul>
+        </div>
+        <div class="skill-com frame item-cent">
+          <h3>Frameworks</h3>
+          <ul>
+            <li>Bootstrap</li>
+            <li>Ruby on Rails</li>
+            <li>RsPec</li>
+            <li>CapyBara</li>
+            <li>Selenium</li>
+          </ul>
+        </div>
+        <div class="skill-com skills item-cent">
+          <h3>Skills</h3>
+          <ul>
+            <li>Codekit</li>
+            <li>Github</li>
+            <li>Codepen</li>
+            <li>Gitlab</li>
+            <li>Terminal</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact-div d-flex">
+        <h3 class="contact-p">
+          I'm always interested in hearing about new projects, so if you'd like to chat please get
+          in touch.
+        </h3>
+        <form action="https://formspree.io/f/xoqybbgr" method="POST" class="form">
+          <div class="d-flex input-flex">
+            <input
+              type="text"
+              name="name"
+              placeholder="Full name"
+              maxlength="30"
+              id="name"
+              class="input"
+              required
+            />
+            <input
+              type="email"
+              name="_replyto"
+              placeholder="Email address"
+              class="input"
+              required
+            />
+          </div>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="7"
+            placeholder="Enter text here"
+            maxlength="500"
+            class="textarea"
+            required
+          ></textarea>
+          <div class="item-cent textarea-but">
+            <button type="submit" aria-label="Get in touch button" class="button-1">
+              Get in touch
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="item-cent footer">
+      <div class="social d-flex">
+        <a class="button" href="https://github.com/mrtaaj" aria-label="Social link to GitHub"
+          ><i class="bx bxl-github soc-icon"></i
+        ></a>
+        <a
+          class="button"
+          href="https://www.linkedin.com/in/mrtaaj001/"
+          aria-label="Social link to LinkedIn"
+          ><i class="bx bxl-linkedin soc-icon"></i
+        ></a>
+        <a class="button" href="https://twitter.com/seedof_99" aria-label="Social link to Twitter"
+          ><i class="bx bxl-twitter soc-icon"></i
+        ></a>
+        <a class="button" href="https://medium.com/@saheed.taaj" aria-label="Social link to Medium"
+          ><i class="bx bxl-medium soc-icon"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="/js/app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
 </html>
