@@ -37,7 +37,7 @@ const itemList = [
   },
   {
     desktopTitle: 'Title2: Keeping track of hundreds of components website',
-    mobileTitle: 'Multi-Post Stories 2',
+    mobileTitle: 'Mul-Post Stories 2',
     detailPa:
       "This is the second Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
     liveRef: 'https://yahoo.com',
@@ -47,7 +47,7 @@ const itemList = [
   },
   {
     desktopTitle: 'Title3: Keeping track of hundreds of components website',
-    mobileTitle: 'Multi-Post Stories 3',
+    mobileTitle: 'Mul-Post Stories 3',
     detailPa:
       "This is the third Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
     liveRef: 'https://facebook.com',
@@ -57,7 +57,7 @@ const itemList = [
   },
   {
     desktopTitle: 'Title4: Keeping track of hundreds of components website',
-    mobileTitle: 'Multi-Post Stories 4',
+    mobileTitle: 'Mul-Post Stories 4',
     detailPa:
       "This is the fourth Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
     liveRef: 'https://google.com',
@@ -67,7 +67,7 @@ const itemList = [
   },
   {
     desktopTitle: 'Title5: Keeping track of hundreds of components website',
-    mobileTitle: 'Multi-Post Stories 5',
+    mobileTitle: 'Mul-Post Stories 5',
     detailPa:
       "This is the fifth Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
     liveRef: 'https://yahoo.com',
@@ -77,7 +77,7 @@ const itemList = [
   },
   {
     desktopTitle: 'Title6: Keeping track of hundreds of components website',
-    mobileTitle: 'Multi-Post Stories 6',
+    mobileTitle: 'Mul-Post Stories 6',
     detailPa:
       "This is the sixth Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
     liveRef: 'https://facebook.com',
@@ -87,7 +87,7 @@ const itemList = [
   },
   {
     desktopTitle: 'Title7: Keeping track of hundreds of components website',
-    mobileTitle: 'Multi-Post Stories 7',
+    mobileTitle: 'Mul-Post Stories 7',
     detailPa:
       "This is the seventh Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
     liveRef: 'https://facebook.com',
