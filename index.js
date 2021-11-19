@@ -4,7 +4,7 @@ const navDeactivators = document.querySelectorAll('.nav-deactivator');
 
 const removeActiveClass = () => {
   navUl.classList.remove('active');
-}
+};
 
 hamburger.addEventListener('click', () => {
   navUl.classList.add('active');
