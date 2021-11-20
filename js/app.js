@@ -1,27 +1,9 @@
-const hamburger = document.getElementById('mobile-nav');
-const navUl = document.getElementById('mobile-nav-tog');
-const cancelBut = document.getElementById('cancel-butt');
-const cancelBut1 = document.getElementById('cancel1-butt');
-const cancelBut2 = document.getElementById('cancel2-butt');
-const cancelBut3 = document.getElementById('cancel3-butt');
+const hamburger = document.querySelector('#mobile-nav');
+const navUl = document.querySelector('#mobile-nav-tog');
+const navDeactivators = document.querySelectorAll('.nav-deactivator');
+const popDeactivators = document.querySelectorAll('.pop-deactivator');
 const popBut = document.querySelectorAll('.pop-button-1');
 const popUl = document.querySelector('#pop-proj-1-back');
-
-hamburger.addEventListener('click', () => {
-  navUl.classList.add('active');
-});
-cancelBut.addEventListener('click', () => {
-  navUl.classList.remove('active');
-});
-cancelBut1.addEventListener('click', () => {
-  navUl.classList.remove('active');
-});
-cancelBut2.addEventListener('click', () => {
-  navUl.classList.remove('active');
-});
-cancelBut3.addEventListener('click', () => {
-  navUl.classList.remove('active');
-});
 
 //Creating more pages
 const itemList = [
@@ -96,6 +78,8 @@ const itemList = [
     backStyle: 'url(/img/Pop-Desktop-Portfolio.png)',
   },
 ];
+
+// Action
 function setter(i) {
   document.querySelector('#mobileChangerCo').innerText = itemList[i].mobileTitle;
   document.querySelector('#desktopChangerCo').innerText = itemList[i].desktopTitle;
@@ -105,7 +89,20 @@ function setter(i) {
   document.querySelector('.pop-proj-skill').innerHTML = itemList[i].skill;
   document.querySelector('.pop-proj-1-2-back').style.backgroundImage = itemList[i].backStyle;
 }
-//Action
+
+const removeActiveClass = () => {
+  navUl.classList.remove('active');
+};
+
+const removePopActive = () => {
+  popUl.classList.remove('pop-active');
+};
+
+//Add Action
+hamburger.addEventListener('click', () => {
+  navUl.classList.add('active');
+});
+
 for (let i = 0; i < itemList.length; i++) {
   popBut[i].addEventListener('click', e => {
     setter(i);
@@ -113,18 +110,12 @@ for (let i = 0; i < itemList.length; i++) {
   });
 }
 
-// popBut[1].addEventListener('click', () => {
-//   popUl[0].classList.add('pop-active');
-//   console.log(document.querySelector(".pop-proj-1-2-para").p);
-//   console.log(itemList[0].title);
-// });
-
 //Cancel/Remove Action
-document.querySelector('#pop-proj-1-back').addEventListener('click', () => {
-  popUl.classList.remove('pop-active');
+navDeactivators.forEach(navDeactivator => {
+  navDeactivator.addEventListener('click', removeActiveClass);
 });
-document.querySelector('#cancel-pop-butt').addEventListener('click', () => {
-  popUl.classList.remove('pop-active');
+popDeactivators.forEach(popDeactivator => {
+  popDeactivator.addEventListener('click', removePopActive);
 });
 document.querySelector('.pop-proj-1').addEventListener('click', e => {
   e.stopPropagation();
