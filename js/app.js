@@ -5,7 +5,7 @@ const popDeactivators = document.querySelectorAll('.pop-deactivator');
 const popBut = document.querySelectorAll('.pop-button-1');
 const popUl = document.querySelector('#pop-proj-1-back');
 
-//Creating more pages
+// Creating more pages
 const itemList = [
   {
     desktopTitle: 'Keeping track of hundreds of components website',
@@ -98,19 +98,19 @@ const removePopActive = () => {
   popUl.classList.remove('pop-active');
 };
 
-//Add Action
+// Add Action
 hamburger.addEventListener('click', () => {
   navUl.classList.add('active');
 });
 
-for (let i = 0; i < itemList.length; i++) {
-  popBut[i].addEventListener('click', e => {
+for (let i = 0; i < itemList.length; i += 1) {
+  popBut[i].addEventListener('click', () => {
     setter(i);
     popUl.classList.add('pop-active');
   });
 }
 
-//Cancel/Remove Action
+// Cancel/Remove Action
 navDeactivators.forEach(navDeactivator => {
   navDeactivator.addEventListener('click', removeActiveClass);
 });
