@@ -37,7 +37,12 @@ header {
   top: -15px;
 }
 
+.mobile-nav-tog {
+  display: none;
+}
+
 main {
+  padding-top: 192px;
   height: 870px;
   background-image: url(/img/main-background.png);
   background-position: top 0 right 0;
@@ -111,12 +116,13 @@ main {
 }
 
 .proj-1-1 {
-  width: 50%;
+  width: 60%;
   height: 400px;
+  background-image: url(/img/ProjectDesktop-1.png);
 }
 
 .proj-1-2 {
-  width: 50%;
+  width: 40%;
 }
 
 .proj-com {

@@ -7,6 +7,8 @@ header {
   background-color: var(--headercolor);
   height: 60px;
   margin: 0;
+  position: fixed;
+  z-index: 2;
 }
 
 .gen-header,
@@ -21,13 +23,56 @@ header {
   padding: 0 30px;
 }
 
+.logo {
+  height: 26px;
+  width: 87px;
+}
+
+.logo img {
+  height: 26px;
+  width: 87px;
+}
+
 .boxi-icon {
   color: white;
   transform: scale(2);
+  cursor: pointer;
 }
 
 .desktop-nav {
   display: none;
+}
+
+.mobile-nav-tog {
+  position: absolute;
+  display: block;
+  height: 0;
+  background-color: #3c3a39;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.active {
+  height: 650px;
+  opacity: 1;
+}
+
+.mobile-nav-tog .mobile-nav-button {
+  color: white;
+  font: 700 32px/44px 'Inter', sans-serif;
+  cursor: pointer;
+}
+
+.mobile-nav-tog .cancel-butt {
+  float: right;
+  display: block;
+  margin-right: 20px;
+  cursor: pointer;
 }
 
 main,
@@ -37,6 +82,7 @@ main,
 }
 
 main {
+  padding-top: 180px;
   height: 590px;
   background-color: #1c1a19;
   background-image: url(/img/mobile-background.png);
@@ -205,6 +251,14 @@ button {
 
 .skill-li > ul > li {
   background-color: rgba(255, 255, 255, 0.24);
+}
+
+.mobile-nav-tog li:not(:first-child) {
+  display: grid;
+  place-items: start;
+  border-bottom: 1px solid #6f6c6b;
+  padding: 20px;
+  clear: both;
 }
 
 .proj-2 {
