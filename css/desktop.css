@@ -31,7 +31,7 @@ header {
   position: relative;
 }
 
-.ion-icon {
+.mail-butt .ion-icon {
   position: absolute;
   font-size: 20px;
   top: -15px;
@@ -107,7 +107,8 @@ main {
 
 .proj-1,
 .about-know,
-.contact-div {
+.contact-div,
+.pop-proj-1-2 {
   flex-flow: row nowrap;
 }
 
@@ -128,6 +129,52 @@ main {
 .proj-com {
   padding: 74px 16px 0 16px;
   min-height: 450px;
+}
+
+.pop-proj-1-back {
+  padding: 100px 120px;
+}
+
+.pop-proj-1 {
+  padding: 27px 24px;
+}
+
+.pop-proj-1-1 {
+  padding-bottom: 0;
+}
+
+.pop-mobileHead {
+  display: none;
+}
+
+.pop-desktopHead {
+  display: block;
+}
+
+.pop-proj-1-2 {
+  padding-top: 40px;
+}
+
+.pop-proj-1-2-back {
+  width: 65%;
+  height: 400px;
+  background-image: url(/img/Pop-Desktop-Portfolio.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pop-proj-1-2-para {
+  width: 35%;
+  justify-content: space-between;
+}
+
+.pop-para {
+  height: 85%;
+}
+
+.pop-button-arrange {
+  height: 15%;
 }
 
 .about-back {
