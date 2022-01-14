@@ -228,6 +228,14 @@ button {
   color: #f4f1f0;
 }
 
+.button-1:disabled,
+.button-1:disabled:hover {
+  background-color: #cccccc;
+  color: #333;
+  cursor: auto;
+  border: 0px solid #cccccc;
+}
+
 .proj-com {
   position: relative;
   display: flex;

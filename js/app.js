@@ -120,3 +120,14 @@ popDeactivators.forEach(popDeactivator => {
 document.querySelector('.pop-proj-1').addEventListener('click', e => {
   e.stopPropagation();
 });
+
+//Form Validation Action
+const textValidator = document.querySelector(".textarea");
+textValidator.addEventListener('input', () => {
+  var buttonEnabler = true;
+  textValidator.value.length >= 15 ? buttonEnabler = false : buttonEnabler = true;
+  console.log(textValidator.value);
+  document.querySelector(".form-button").disabled = buttonEnabler;
+})
+
+
