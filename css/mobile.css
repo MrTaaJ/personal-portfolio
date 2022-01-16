@@ -228,14 +228,6 @@ button {
   color: #f4f1f0;
 }
 
-.button-1:disabled,
-.button-1:disabled:hover {
-  background-color: #cccccc;
-  color: #333;
-  cursor: auto;
-  border: 0px solid #cccccc;
-}
-
 .proj-com {
   position: relative;
   display: flex;
@@ -511,22 +503,22 @@ button {
   width: 100%;
 }
 
-.emailarea-container{
+.emailarea-container {
   margin-bottom: 20px;
   width: 100%;
 }
 
-.email-input{
+.email-input {
   margin-bottom: 10px;
 }
 
 .emailArea-note,
-.textarea-note{
+.textarea-note {
   background-color: #1c1a19;
   color: white;
   border-radius: 5px;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   padding: 5px;
   font-size: 12px;
   position: relative;
@@ -535,7 +527,7 @@ button {
 }
 
 .emailArea-note::before,
-.textarea-note::before{
+.textarea-note::before {
   content: " ";
   position: absolute;
   top: -5px;
@@ -554,8 +546,8 @@ button {
   background-color: #fbf8f7;
 }
 
-.textarea-note-active{
-  height: fit-content;
+.textarea-note-active {
+  height: 35px;
   width: fit-content;
   opacity: 1;
 }
@@ -577,4 +569,12 @@ button {
 
 .footer .soc-icon {
   color: #505f79;
+}
+
+.button-1:disabled,
+.button-1:disabled:hover {
+  background-color: #ccc;
+  color: #333;
+  cursor: auto;
+  border: 0 solid #ccc;
 }

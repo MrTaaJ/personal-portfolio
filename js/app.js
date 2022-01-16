@@ -1,4 +1,4 @@
-import { formValidator } from "./validator.js"
+import { FormValidator } from './validator.js';
 
 const hamburger = document.querySelector('#mobile-nav');
 const navUl = document.querySelector('#mobile-nav-tog');
@@ -123,28 +123,18 @@ document.querySelector('.pop-proj-1').addEventListener('click', e => {
   e.stopPropagation();
 });
 
-//Form Validation Action
-const textValidator = document.querySelector(".textarea");
-const emailValidator = document.querySelector(".email-input");
-const nameValidator = document.querySelector(".name-input");
+// Form Validation Action
+const textValidator = document.querySelector('.textarea');
+const emailValidator = document.querySelector('.email-input');
+const nameValidator = document.querySelector('.name-input');
 
-let formButton = (value) => {
-  return document.querySelector(".form-button").disabled = value;
-};
+const FormValidation = new FormValidator();
 
-let eventValidator = (data)=>{
-  if (data.value ===""){
-    return true;
-  }
-}
+// formButton(true);
+FormValidation.defaultButton();
 
-let formValidation = new formValidator(nameValidator, emailValidator, textValidator, formButton, eventValidator);
+nameValidator.addEventListener('input', FormValidation.nameValid);
 
-//formButton(true);
-formValidation.defaultButton(formButton);
+emailValidator.addEventListener('input', FormValidation.emailValid);
 
-nameValidator.addEventListener('input', formValidation.nameValid);
-
-emailValidator.addEventListener('input', formValidation.emailValid);
-
-textValidator.addEventListener('input', formValidation.textValid);
+textValidator.addEventListener('input', FormValidation.textValid);
