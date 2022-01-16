@@ -210,6 +210,11 @@ main {
   padding: 0;
 }
 
+.emailArea-note,
+.textarea-note{
+  margin-left: 25px;
+}
+
 .textarea-but {
   float: left;
 }
