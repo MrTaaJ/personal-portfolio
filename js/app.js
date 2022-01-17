@@ -1,5 +1,3 @@
-import { FormValidator } from './validator.js';
-
 const hamburger = document.querySelector('#mobile-nav');
 const navUl = document.querySelector('#mobile-nav-tog');
 const navDeactivators = document.querySelectorAll('.nav-deactivator');
@@ -124,17 +122,68 @@ document.querySelector('.pop-proj-1').addEventListener('click', e => {
 });
 
 // Form Validation Action
-const textValidator = document.querySelector('.textarea');
-const emailValidator = document.querySelector('.email-input');
-const nameValidator = document.querySelector('.name-input');
+const textValid = document.querySelector('.textarea');
+const emailValid = document.querySelector('.email-input');
+const nameValid = document.querySelector('.name-input');
+const formBut = document.querySelector('.form-button');
+const emailTest = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-const FormValidation = new FormValidator();
+const eventBut = data => {
+  if (data.value === '') {
+    return true;
+  }
+  return false;
+};
 
-// formButton(true);
-FormValidation.defaultButton();
+const defaultButton = value => {
+  formBut.disabled = value;
+};
+defaultButton(true);
 
-nameValidator.addEventListener('input', FormValidation.nameValid);
+const nameValidator = () => {
+  if (nameValid.value === '') {
+    defaultButton(true);
+  } else if (eventBut(emailValid) === true || !emailTest.test(emailValid.value)) {
+    defaultButton(true);
+  } else if (eventBut(textValid) === true || textValid.value.length < 15) {
+    defaultButton(true);
+  } else {
+    defaultButton(false);
+  }
+};
 
-emailValidator.addEventListener('input', FormValidation.emailValid);
+const emailValidator = () => {
+  if (!emailTest.test(emailValid.value) || emailValid.value === '') {
+    document.querySelector('.emailArea-note').classList.add('textarea-note-active');
+    defaultButton(true);
+  } else {
+    document.querySelector('.emailArea-note').classList.remove('textarea-note-active');
+    if (eventBut(textValid) === true || eventBut(nameValid) === true) {
+      defaultButton(true);
+    } else if (textValid.value.length < 15) {
+      defaultButton(true);
+    } else {
+      defaultButton(false);
+    }
+  }
+};
 
-textValidator.addEventListener('input', FormValidation.textValid);
+const textValidator = () => {
+  if (textValid.value.length < 15) {
+    document.querySelector('.textarea-note').classList.add('textarea-note-active');
+    defaultButton(true);
+  } else {
+    document.querySelector('.textarea-note').classList.remove('textarea-note-active');
+    if (eventBut(nameValid) === true) {
+      defaultButton(true);
+    } else {
+      defaultButton(false);
+    }
+  }
+};
+
+nameValid.addEventListener('input', nameValidator);
+
+emailValid.addEventListener('input', emailValidator);
+
+textValid.addEventListener('input', textValidator);
