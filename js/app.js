@@ -140,6 +140,10 @@ const defaultButton = value => {
 };
 defaultButton(true);
 
+const lowerCase = data => {
+  data.value = data.value.toLowerCase();
+};
+
 const nameValidator = () => {
   if (nameValid.value === '') {
     defaultButton(true);
@@ -153,6 +157,7 @@ const nameValidator = () => {
 };
 
 const emailValidator = () => {
+  lowerCase(emailValid);
   if (!emailTest.test(emailValid.value) || emailValid.value === '') {
     document.querySelector('.emailArea-note').classList.add('textarea-note-active');
     defaultButton(true);
