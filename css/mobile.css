@@ -500,6 +500,42 @@ button {
   border: none;
   border-bottom: 1px solid #dbd8d7;
   margin-bottom: 20px;
+  width: 100%;
+}
+
+.emailarea-container {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.email-input {
+  margin-bottom: 10px;
+}
+
+.emailArea-note,
+.textarea-note {
+  background-color: #1c1a19;
+  color: white;
+  border-radius: 5px;
+  width: 0;
+  height: 0;
+  padding: 5px;
+  font-size: 12px;
+  position: relative;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.emailArea-note::before,
+.textarea-note::before {
+  content: " ";
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  height: 10px;
+  width: 10px;
+  background-color: #1c1a19;
+  transform: rotate(45deg);
 }
 
 .textarea {
@@ -508,6 +544,12 @@ button {
   margin-bottom: 10px;
   border: none;
   background-color: #fbf8f7;
+}
+
+.textarea-note-active {
+  height: 35px;
+  width: fit-content;
+  opacity: 1;
 }
 
 .input:focus,
@@ -527,4 +569,12 @@ button {
 
 .footer .soc-icon {
   color: #505f79;
+}
+
+.button-1:disabled,
+.button-1:disabled:hover {
+  background-color: #ccc;
+  color: #333;
+  cursor: auto;
+  border: 0 solid #ccc;
 }
