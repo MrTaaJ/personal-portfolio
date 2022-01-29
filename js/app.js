@@ -128,6 +128,12 @@ const nameValid = document.querySelector('.name-input');
 const formBut = document.querySelector('.form-button');
 const emailTest = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+const setLocal = () => {
+  nameValid.value = localStorage.getItem("name");
+  emailValid.value = localStorage.getItem("email");
+  textValid.value = localStorage.getItem("message");
+}
+
 const eventBut = data => {
   if (data.value === '') {
     return true;
@@ -154,6 +160,7 @@ const nameValidator = () => {
   } else {
     defaultButton(false);
   }
+  localStorage.setItem("name", nameValid.value)
 };
 
 const emailValidator = () => {
@@ -171,6 +178,7 @@ const emailValidator = () => {
       defaultButton(false);
     }
   }
+  localStorage.setItem("email", emailValid.value)
 };
 
 const textValidator = () => {
@@ -185,7 +193,10 @@ const textValidator = () => {
       defaultButton(false);
     }
   }
+  localStorage.setItem("message", textValid.value)
 };
+
+window.addEventListener('load', setLocal);
 
 nameValid.addEventListener('input', nameValidator);
 
