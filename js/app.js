@@ -128,6 +128,23 @@ const nameValid = document.querySelector('.name-input');
 const formBut = document.querySelector('.form-button');
 const emailTest = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+const storeLocal = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+const setLocal = () => {
+  storeLocal.name = nameValid.value;
+  storeLocal.email = emailValid.value;
+  storeLocal.message = textValid.value;
+  localStorage.setItem('storeLocal', JSON.stringify(storeLocal));
+};
+
+const removeStore = () => {
+  localStorage.removeItem('storeLocal');
+};
+
 const eventBut = data => {
   if (data.value === '') {
     return true;
@@ -154,6 +171,7 @@ const nameValidator = () => {
   } else {
     defaultButton(false);
   }
+  setLocal();
 };
 
 const emailValidator = () => {
@@ -171,6 +189,7 @@ const emailValidator = () => {
       defaultButton(false);
     }
   }
+  setLocal();
 };
 
 const textValidator = () => {
@@ -179,13 +198,35 @@ const textValidator = () => {
     defaultButton(true);
   } else {
     document.querySelector('.textarea-note').classList.remove('textarea-note-active');
-    if (eventBut(nameValid) === true) {
+    if (eventBut(nameValid) === true || !emailTest.test(emailValid.value)) {
+      defaultButton(true);
+    } else {
+      defaultButton(false);
+    }
+  }
+  setLocal();
+};
+
+const getLocal = () => {
+  const returnItem = localStorage.getItem('storeLocal');
+  if (returnItem) {
+    const returnItemObject = JSON.parse(returnItem);
+    nameValid.value = returnItemObject.name;
+    emailValid.value = returnItemObject.email;
+    textValid.value = returnItemObject.message;
+    if (!emailTest.test(emailValid.value) || eventBut(nameValid) === true) {
+      defaultButton(true);
+    } else if (textValid.value.length < 15) {
       defaultButton(true);
     } else {
       defaultButton(false);
     }
   }
 };
+
+window.addEventListener('load', getLocal);
+
+formBut.addEventListener('click', removeStore);
 
 nameValid.addEventListener('input', nameValidator);
 
