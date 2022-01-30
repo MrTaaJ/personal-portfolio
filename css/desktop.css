@@ -157,7 +157,7 @@ main {
 
 .pop-proj-1-2-back {
   width: 65%;
-  height: 400px;
+  height: 350px;
   background-image: url(/img/Pop-Desktop-Portfolio.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -171,6 +171,7 @@ main {
 
 .pop-para {
   height: 85%;
+  overflow-y: hidden;
 }
 
 .pop-button-arrange {

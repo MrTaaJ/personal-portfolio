@@ -377,7 +377,7 @@ button {
 
 .pop-para {
   height: 80%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .pop-button-arrange {
